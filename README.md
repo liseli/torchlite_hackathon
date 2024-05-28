@@ -44,8 +44,26 @@ that measures the similarity between the query string and the keywords extracted
 
 # Outputs
 
+# How to use the notebook
+
+If you are using a virtual environment, activate it and run the following command:
+
+```jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10 --NotebookApp.rate_limit_window=3.0```
+
+2. Open the notebook and run the cells. The first cell of the notebook will install the requirements.
+
+If you do not have the virtual environment, you can create one and install the requirements by running the following commands:
+
+``` poetry env use python```
+```source ~/venv/bin/activate```
+
+Then, run the notebook:
+
+```jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10 --NotebookApp.rate_limit_window=3.0```
+
 Relevant pages dataset:
-    * For each page
+    
+    For each page
         * text of the page.
         * score that measures the similarity between the query string and the keywords extracted from the page.
         * 10 keywords extracted from the page.
